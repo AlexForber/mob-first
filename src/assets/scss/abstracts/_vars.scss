@@ -1,0 +1,33 @@
+// Colors
+$accentColor: #FC9B09;
+$primaryColor: #fff;
+$secondaryColor: #C7C7C7;
+$textColor: #37373F;
+$textColorLight: #B3B3B3;
+$linkColor: #5286EC;
+
+
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 1280,
+    lg:1440
+);
+
+
+%container {
+    padding: 0 15px;
+        @media screen  and (min-width: 576px) {
+        padding: 0 30px;
+        }
+        @media screen  and (min-width: 768px) {
+            padding: 0 50px;
+            }
+        @media screen  and (min-width: 1280px) {
+            padding: 0;
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+            }
+}
+

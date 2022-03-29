@@ -1,0 +1,68 @@
+.header{
+
+
+
+    @include media(sm){
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .container{
+        @extend %container;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+
+        @media screen  and (min-width: 768px) {
+            height: 100px;
+            }
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo{
+        margin-right: 45px;
+        @media screen  and (min-width: 576px) {
+            margin-right: 36px;
+            }
+        @media screen  and (min-width: 768px) {
+            height: 23px;
+            }
+    }
+
+    &__phone-city{
+        @include font(14px, 400, 17px, $linkColor);
+        @media screen  and (min-width: 576px) {
+            display: none;
+            }
+    }
+
+    &__phone{
+        display: none;
+    
+        @media screen  and (min-width: 576px) {
+            display: block;
+            }
+        span{
+            @include font(14px, 400, 17px, $textColorLight);
+            
+        }
+    }
+    &__phone-link{
+        @include font(14px, 400, 17px, $textColor);
+    }
+
+    &__user{
+        @media screen  and (min-width: 1280px) {
+            display: none;
+            }
+    }
+}
+
+
