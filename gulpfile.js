@@ -66,7 +66,9 @@ function serve() {
     browserSync.init({
         server: {
             baseDir: "./" + distPath
-        }
+        },
+        browser: 'chrome',
+        notify: false
     });
 }
 

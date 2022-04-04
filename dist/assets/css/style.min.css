@@ -1,13 +1,13 @@
-.header .container, .main .container {
+.container, .header .container, .main .container {
   padding: 0 15px; }
   @media screen and (min-width: 576px) {
-    .header .container, .main .container {
+    .container, .header .container, .main .container {
       padding: 0 30px; } }
   @media screen and (min-width: 768px) {
-    .header .container, .main .container {
+    .container, .header .container, .main .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header .container, .main .container {
+    .container, .header .container, .main .container {
       padding: 0;
       max-width: 1140px;
       width: 100%;
@@ -23,7 +23,10 @@
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  min-width: 320px; }
+  min-width: 300px; }
+
+ul {
+  list-style: none; }
 
 a {
   text-decoration: none; }
@@ -157,5 +160,52 @@ a {
     color: white;
     filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     transform: translateY(-6px); }
+
+.photoshoot {
+  margin: 40px 0  60px; }
+  .photoshoot__title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #37373F;
+    text-align: center;
+    margin-bottom: 13px; }
+  .photoshoot__video {
+    max-width: 280px;
+    height: 197px;
+    border-radius: 4px; }
+  .photoshoot__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #37373F;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    margin-top: 30px; }
+  .photoshoot__menu {
+    min-height: 220px;
+    border-bottom: 0.5px solid #C7C7C7; }
+  .photoshoot__item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #37373F;
+    margin: 20px 0 0; }
+  .photoshoot__img {
+    margin-right: 10px; }
+  .photoshoot__review {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #C7C7C7; }
+    .photoshoot__review-image-margin {
+      margin-right: 14px; }
+    .photoshoot__review-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #37373F; }
 
 /*# sourceMappingURL=style.min.css.map */

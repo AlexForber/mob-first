@@ -34,6 +34,7 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 a {
@@ -129,10 +130,17 @@ a {
 }
 
 .main {
-    background-image: url(./../images/main-bg.jpg);
+    background-image: url(.././images/main-bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 62% -1px;
+    background-repeat: no-repeat;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+    .main {
+        background-position: center;
+    }
 }
 
 .main__inner {
@@ -143,6 +151,12 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     height: 655px;
+}
+
+@media (min-width: 768px) {
+    .main__inner {
+        height: 840px;
+    }
 }
 
 .main__title {

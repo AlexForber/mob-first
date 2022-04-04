@@ -1,0 +1,58 @@
+.photoshoot{
+
+    margin: 40px 0  60px;
+
+    &__title{
+        @include font(28px, 400, 34px, $textColor);
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    &__video{
+        max-width: 280px;
+        height: 197px;
+        border-radius: 4px;
+    }
+
+    &__text{
+        @include font(14px, 400, 20px, $textColor);
+        font-style: normal;
+        letter-spacing: 0.4px;
+        margin-top: 30px;
+    }
+
+    &__menu{
+        min-height: 220px;
+        border-bottom:  0.5px solid #C7C7C7;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        @include font(14px, 500, 20px, $textColor);
+        margin: 20px 0 0;
+    }
+
+    &__img{
+        margin-right: 10px;
+    }
+
+    &__review{
+        height: 70px;
+        display: flex;
+        align-items:center;
+        border-bottom: 0.5px solid #C7C7C7;
+
+        &-image-margin{
+            margin-right: 14px;
+        }
+
+        &-text{
+            @include font(14px, 500, 20px, $textColor);
+        }
+    }
+
+
+
+
+}

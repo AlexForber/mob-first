@@ -12,7 +12,15 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
-    min-width: 320px;
+    min-width: 300px;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    @extend %container;
 }
 
 a{
@@ -22,3 +30,4 @@ a{
 
 @import "./header";
 @import "./main-block";
+@import "./photoshot";
