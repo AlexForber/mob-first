@@ -1,7 +1,3 @@
-function test(a, b) {
-    return a + b
-}
-
 // find elements
 let prevBtn = document.getElementById("prev-btn");
 let nextBtn = document.getElementById("next-btn");
@@ -52,6 +48,3 @@ if(currentImageIndex < imagesArray.length){
     
 };
 
-
-
-//# sourceMappingURL=script.js.map
