@@ -325,4 +325,72 @@ a {
       flex-direction: column;
       align-items: flex-start; }
 
+.map {
+  margin-top: 45px; }
+  .map__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #C7C7C7;
+    margin-top: 52px; }
+  .map__slider {
+    margin-top: 52px; }
+    .map__slider-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .map__slider-round {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 44px;
+      color: #fff;
+      width: 66px;
+      height: 66px;
+      border-radius: 50px;
+      background: #FC9B09;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .map__slider-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #37373F;
+      margin-top: 20px; }
+    .map__slider-place {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #37373F;
+      margin-top: 10px; }
+  .map__profile {
+    display: flex;
+    margin-top: 40px; }
+    .map__profile-block {
+      padding-left: 30px;
+      padding-right: 11px; }
+    .map__profile-image {
+      width: 67px;
+      height: 67px; }
+    .map__profile-wrapper {
+      display: flex;
+      flex-direction: column; }
+    .map__profile-name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #37373F; }
+    .map__profile-work {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #37373F;
+      margin-top: 5px; }
+    .map__profile-about {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #5286EC;
+      margin-top: 7px; }
+
 /*# sourceMappingURL=style.min.css.map */

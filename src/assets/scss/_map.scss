@@ -1,0 +1,79 @@
+.map{
+    margin-top: 45px;
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid $secondaryColor;
+        margin-top: 52px;
+    }
+
+    &__slider{
+        margin-top: 52px;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        &-round{
+            @include font(30px, 700, 44px, $primaryColor);
+            width: 66px;
+            height: 66px;
+            border-radius: 50px;
+            background: $accentColor;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        &-title{
+            @include font(16px, 500, 20px, $textColor);
+            margin-top: 20px;
+        }
+        &-place{
+            @include font(14px, 400, 20px, $textColor);
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+
+
+
+
+    &__profile{
+        display: flex;
+        margin-top: 40px;
+
+        &-block{
+            padding-left: 30px;
+            padding-right: 11px;
+        }
+
+        &-image{
+            width: 67px;
+            height: 67px;
+        }
+
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &-name{
+            @include font(16px, 500, 20px, $textColor);
+        }
+        &-work{
+            @include font(14px, 400, 21px, $textColor);
+            margin-top: 5px;
+        }
+        &-about{
+            @include font(14px, 500, 21px, $linkColor);
+            margin-top: 7px;
+        }
+    }
+}

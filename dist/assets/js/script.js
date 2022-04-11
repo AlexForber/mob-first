@@ -54,4 +54,5 @@ if(currentImageIndex < imagesArray.length){
 
 
 
+
 //# sourceMappingURL=script.js.map
