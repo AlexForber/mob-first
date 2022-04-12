@@ -393,4 +393,81 @@ a {
       color: #5286EC;
       margin-top: 7px; }
 
+.testimonials {
+  margin-top: 40px; }
+  .testimonials__title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39.3px;
+    color: #37373F;
+    text-align: center;
+    margin-bottom: 20px; }
+  .testimonials__block {
+    margin-top: 30px;
+    border-bottom: 0.5px solid #C7C7C7; }
+  .testimonials__avatar {
+    display: flex;
+    align-items: center; }
+    .testimonials__avatar-img {
+      width: 84px;
+      height: 84px;
+      margin-right: 18px; }
+    .testimonials__avatar-name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #37373F; }
+    .testimonials__avatar-job {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #37373F;
+      margin-top: 6px; }
+    .testimonials__avatar-raiting {
+      margin-top: 7px;
+      display: inline-block; }
+    .testimonials__avatar-comment {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #B3B3B3;
+      position: relative;
+      margin-top: 24px;
+      display: inline-block; }
+    .testimonials__avatar-pic {
+      width: 15px;
+      height: 11.5px; }
+  .testimonials__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #37373F;
+    margin-top: 14px; }
+  .testimonials__data {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #B3B3B3;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: inline-block; }
+  .testimonials__other {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #5286EC;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    position: relative; }
+    .testimonials__other::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 7px;
+      right: 35px;
+      width: 11px;
+      height: 18px;
+      background: url(.././images/right-arrow.svg) no-repeat; }
+
 /*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,81 @@
+.testimonials{
+    margin-top: 40px;
+
+    &__title{
+        @include font(26px, 400, 39.3px, $textColor);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__block{
+        margin-top: 30px;
+        border-bottom: 0.5px solid $secondaryColor;
+    }
+
+    &__avatar{
+        display: flex;
+        align-items: center;
+
+        &-img{
+            width: 84px;
+            height: 84px;
+            margin-right: 18px;
+        }
+
+        &-name{
+            @include font(16px, 500, 20px, $textColor);
+
+        }
+
+        &-job{
+            @include font(14px, 400, 21px, $textColor);
+            margin-top: 6px;
+        }
+
+        &-raiting{
+            margin-top: 7px;
+            display: inline-block;
+        }
+        &-comment{
+            @include font(14px, 400, 21px, $textColorLight);
+            position: relative;
+            margin-top: 24px;
+            display: inline-block;
+        }
+        &-pic{
+            width: 15px;
+            height: 11.5px;
+
+        }
+    }
+
+    &__text{
+        @include font(14px, 400, 21px, $textColor);
+        margin-top: 14px;
+    }
+
+    &__data{
+        @include font(14px, 400, 21px, $textColorLight);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    &__other{
+        @include font(17px, 500, 25px, $linkColor);
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            right: 35px;
+            width: 11px;
+            height: 18px;
+            background: url(.././images/right-arrow.svg) no-repeat;
+        }
+    }
+}
