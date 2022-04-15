@@ -470,4 +470,20 @@ a {
       height: 18px;
       background: url(.././images/right-arrow.svg) no-repeat; }
 
+.footer {
+  margin-top: 87px; }
+  .footer__top {
+    border-bottom: 0.5px solid #B3B3B3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__top-social {
+      display: flex;
+      align-items: center; }
+    .footer__top-link {
+      display: inline-block;
+      margin-right: 20px; }
+      .footer__top-link:last-child {
+        margin-right: 0; }
+
 /*# sourceMappingURL=style.min.css.map */
