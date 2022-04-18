@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 28px;
 
         &-social{
             display: flex;
@@ -22,5 +23,47 @@
             }
         }
 
+    }
+
+    &__bottom{
+        margin: 26px 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &-pay{
+            grid-area: 1/1/1/3;
+        }
+
+        &-lang{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        &-info{
+            grid-area: 2/1/2/4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+        }
+
+        &-pic{
+            margin-right: 17px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &-link{
+            @include font(14px,400, 17px, $textColorLight);
+            display: block;
+        }
+
+        &-about{
+            @include font(14px,400, 17px, $textColorLight);
+            margin-top: 10px;
+        }
+    
     }
 }
