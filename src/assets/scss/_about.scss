@@ -1,22 +1,59 @@
 .about{
     margin-top: 63px;
+
+    & .container{
+        @include media(md){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+    }
+
     &__photographer{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        @include media(md){
+            grid-area: 1/2/1/3;
+            padding-top: 40px;
+        }
+
+
         &::before{
             content: "";
             position: absolute;
-            right: 0px;
+            top: -5%;
+            right: 0%;
             background: url(.././images/heart.svg);
+            background-repeat: no-repeat;
+            background-position: center;
             width: 31px;
             height: 27px;
-            top: -15px;
+            @include media(xs){
+                
+                right: 20%;
+            }
+            @include media(sm){
+                right: 28%;
+            }
+            @include media(md){
+                top: 10%;
+                right: 26%;
+            }
         }
+    
+        &-avatar{
+            margin-bottom: 23px;
+            position: relative;
+            display: block;
+
+        
+        }
+
         &-name{
             @include font(18px, 500, 22px, $textColor);
-            margin-top: 23px;
+            
         }
         &-title{
             @include font(14px, 400, 21px, $textColor);
@@ -30,6 +67,10 @@
     }
     &__organization{
         margin-top: 25px;
+        @include media(md){
+            margin-top: 0;
+            grid-area: 1/1/1/2;
+        }
     }
 
 
@@ -40,10 +81,21 @@
 
     &__offer{
         margin-top: 30px;
+        @include media(xs){
+            border-bottom: 0.5px solid $secondaryColor;
+            padding-bottom: 49px;
+        }
+        @include media(md){
+            grid-area: 2/1/2/4;
+
+            & .about__text{
+                max-width: 584px;
+            }
+        }
     }
 
     &__text{
-        @include font(14px, 400, 24px, $textColor);
+        @include font(16px, 400, 24px, $textColor);
         margin-bottom: 22px;
     }
 }
